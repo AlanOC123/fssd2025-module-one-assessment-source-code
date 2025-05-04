@@ -1,0 +1,81 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+main h2 {
+    text-align: center;
+}
+
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    width: 90%;
+    overflow-y: scroll;
+}
+
+.genre-card {
+    flex: 1;
+    padding: var(--spacing-sm);
+    border: var(--border-sm);
+    border-radius: var(--border-radius-md);
+    aspect-ratio: 1/1;
+    min-width: 15em;
+    max-width: 25em;
+    position: relative;
+}
+
+.genre-card .artwork {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-md);
+    background-color: red;
+    transition: var(--transition-normal);
+}
+
+.genre-card:hover .artwork {
+    transform: translateY(-4px);
+    transition-delay: 100ms;
+}
+
+.genre-card:hover .genre-name {
+    transform: translate(-50%, -60%);
+}
+
+.genre-card .genre-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: #FEFEFE75;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-sm);
+    transition: var(--transition-normal);
+}
+
+.genre-card:nth-child(1) .artwork {
+    background: linear-gradient(135deg, #ff8a00, #da1b60);
+}
+.genre-card:nth-child(2) .artwork {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+.genre-card:nth-child(3) .artwork {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+.genre-card:nth-child(4) .artwork {
+    background: linear-gradient(135deg, #a8e063, #56ab2f);
+}
+.genre-card:nth-child(5) .artwork {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}
+.genre-card:nth-child(6) .artwork {
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+}
