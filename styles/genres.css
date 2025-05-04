@@ -18,17 +18,15 @@ main ul {
     align-items: center;
     gap: var(--spacing-md);
     width: 90%;
-    overflow-y: scroll;
 }
 
 .genre-card {
     flex: 1;
     padding: var(--spacing-sm);
-    border: var(--border-sm);
     border-radius: var(--border-radius-md);
     aspect-ratio: 1/1;
-    min-width: 15em;
-    max-width: 25em;
+    min-width: 25em;
+    max-width: 30em;
     position: relative;
 }
 

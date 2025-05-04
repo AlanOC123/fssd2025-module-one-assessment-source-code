@@ -1,5 +1,9 @@
 header {
     display: flex;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-background);
+    z-index: 1;
 }
 
 .to-home,

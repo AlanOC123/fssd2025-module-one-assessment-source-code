@@ -1,0 +1,74 @@
+main {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+main h2 {
+    text-align: center;
+}
+
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    width: 90%;
+}
+
+.artist-card {
+    flex: 1;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-md);
+    min-width: 30em;
+    max-width: 40em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.artists-image {
+    width: 100%;
+    flex: 2;
+}
+
+.artists-image img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: var(--border-radius-lg);
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.artist-name,
+.artist-genre {
+    text-align: center;
+    transition: var(--transition-normal);
+}
+
+.artist-genre {
+    color: var(--color-muted);
+    font-weight: var(--font-weight-light);
+}
+
+.artist-name {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+}
+
+.artist-card:hover {
+    cursor: pointer;
+}
+
+.artist-card:hover .artist-name {
+    color: var(--color-accent);
+}
+
+.artist-card:hover .artist-genre {
+    letter-spacing: var(--letter-spacing-wide);
+}
