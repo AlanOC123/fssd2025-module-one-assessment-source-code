@@ -1,0 +1,94 @@
+main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30em 1fr;
+    gap: var(--spacing-md);
+}
+
+aside {
+    grid-column: 1 / 2;
+    height: 100%;
+    border-right: var(--border-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+}
+
+aside p {
+    line-height: var(--line-height-wide);
+    font-size: var(--font-size-md);
+}
+
+.highlight {
+    color: var(--color-accent);
+}
+
+.highlight a {
+    color: var(--color-accent);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+}
+
+section {
+    grid-column: 2 / -1;
+    height: 100%;
+    display: flex;
+}
+
+.featured-song {
+    height: 100%;
+    flex: 4;
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: var(--border-radius-lg);
+  }
+
+  .artist-profile {
+    height: 100%;
+    flex: 1;
+    gap: var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: var(--spacing-md);
+    border-left: var(--border-sm);
+}
+
+.artist-image {
+    width: 100%;
+    aspect-ratio: 16/9; /* or use aspect ratio */
+    overflow: hidden;
+    border-radius: var(--border-radius-md); /* optional */
+}
+
+  .artist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .artist-name {
+    text-align: center;
+  }

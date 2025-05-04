@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next-Up Music</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/common/root.css">
+    <link rel="stylesheet" href="./styles/common/global.css">
+    <link rel="stylesheet" href="./styles/common/header.css">
+    <link rel="stylesheet" href="./styles/common/footer.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <script src="https://kit.fontawesome.com/d9deb4df99.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-            <div class="main-icon-container">
-                <i class="fa-solid fa-headphones main-icon"></i>
+        <a class="to-home" href="#">
+            <div class="logo">
+                <i class="fa-solid fa-headphones logo-icon"></i>
                 <h1 class="title">Next-Up Music</h1>
             </div>
-            <h2 class="slogan">Discover the artists flying under the radar.</h2>
-        </div>
+        </a>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Page One</a></li>
-                <li><a href="">Page Two</a></li>
+                <li><a href="./pages/artists.html">Artists</a></li>
+                <li><a href="./pages/genres.html">Genres</a></li>
+                <li><a href="./pages/playlists.html">Playlists</a></li>
+                <li><a href="./pages/suggest.html">Suggest</a></li>
+                <li><a href="./pages/about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +34,35 @@
 
     <!-- Main -->
     <main>
-        <aside></aside>
-        <section></section>
+        <aside>
+            <h2>Introduction</h2>
+            <p>
+                This is a website dedicated to highlighting some really interesting up and coming artists across multiple different music genres. The goal is to highlight the works of smaller artists and expose you to music that isnt as mainstream to allow people to broaden their spectrum of music taste and find new artists for their playlists. Feel free to <span class="highlight"><a href="./pages/suggest.html">suggest an artist</a></span> you think is worthy of recognition in the suggest section also.
+            </p>
+        </aside>
+        <section>
+            <div class="featured-song">
+                <h2>Featured Artist</h2>
+                <div class="video-container">
+                    <iframe
+                    src="https://www.youtube.com/embed/snqR-toz9bE"
+                    title="YouTube Video Player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    ></iframe>
+                </div>
+                <h2>Birds By Saoirse Miller</h2>
+            </div>
+            <div class="artist-profile">
+                <div class="artist-image">
+                    <img src="./assets//saoirse_miller_2.jpg" alt="">
+                </div>
+                <h2 class="artist-name">Saoirse Miller</h2>
+                <p class="artist-description">
+                    Saoirse Miller is an independent composer, producer and singer-songwriter from Dublin. Drawing inspiration from Irish folklore, pagan mysticism and hauntology, Saoirse's music blends natural sounds with electronics and her otherworldly vocals, to create ethereal electro-acoustic ambience.
+                </p>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
