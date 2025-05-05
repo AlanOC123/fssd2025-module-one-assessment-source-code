@@ -43,3 +43,17 @@ main ul {
     border: 0;
     border-radius: inherit;
   }
+
+  .genre-name {
+    transition: var(--transition-normal);
+    max-width: 20em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .playlist-container:hover .genre-name {
+    color: var(--color-accent);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+  }
