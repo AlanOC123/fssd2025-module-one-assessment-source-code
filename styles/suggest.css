@@ -1,0 +1,107 @@
+main {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+main h2 {
+    text-align: center;
+}
+
+main form {
+    padding: var(--spacing-sm);
+    border: var(--border-sm);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    width: 50rem;
+    max-width: 80%;
+}
+
+fieldset {
+    padding: var(--spacing-md);
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+legend {
+    width: 100%;
+    font-size: var(--font-size-md);
+    border-bottom: var(--border-sm);
+    padding: var(--spacing-xs);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+label {
+    font-size: var(--font-size-base);
+    overflow: hidden;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+select,
+textarea {
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-sm);
+    border: var(--border-sm);
+    outline: var(--outline-hidden);
+    overflow: hidden;
+    transition: var(--transition-normal);
+    resize: none;
+}
+
+input[type="text"]:focus-within,
+input[type="url"]:focus-within,
+input[type="email"]:focus-within,
+select:focus-within,
+textarea:focus-within {
+    outline: var(--outline-sm);
+}
+
+.form-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+button {
+    transition: var(--transition-normal);
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
+    border: var(--border-hidden);
+    cursor: pointer;
+    padding-inline: var(--spacing-sm);
+    padding-block: var(--spacing-xs);
+    border-radius: var(--border-radius-md);
+    font-weight: var(--font-weight-bold);
+}
+
+button[type="submit"] {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+button[type="submit"]:hover {
+    background-color: #DD2856;
+}
+
+button[type="reset"] {
+    background-color: transparent;
+    color: var(--color-accent);
+}
+
+button[type="reset"]:hover {
+    color: var(--color-muted);
+    border: var(--border-sm);
+}
