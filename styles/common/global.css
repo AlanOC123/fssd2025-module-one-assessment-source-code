@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    height: 100dvh;
+    height: 100%;
     background-color: var(--color-background);
     line-height: var(--line-height-base);
     -webkit-font-smoothing: antialiased;

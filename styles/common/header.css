@@ -1,14 +1,20 @@
 header {
     display: flex;
+    flex-wrap: wrap;
     position: sticky;
     top: 0;
     background-color: var(--color-background);
     z-index: 1;
+    margin-left: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
 }
 
 .to-home,
 nav {
+    width: 100%;
     flex: 1;
+    min-width: 50em;
+    margin-bottom: var(--spacing-md);
 }
 
 
@@ -46,8 +52,10 @@ nav ul {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 nav ul li {
     flex: 1;
+    text-align: center;
 }

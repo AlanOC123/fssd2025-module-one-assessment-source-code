@@ -64,7 +64,7 @@ main ul {
 
 .artist-card:hover {
     cursor: pointer;
-    background-color: var(--color-muted);
+    background-color: var(--color-border);
 }
 
 .artist-card:hover .artist-name {
@@ -73,5 +73,5 @@ main ul {
 
 .artist-card:hover .artist-genre {
     letter-spacing: var(--letter-spacing-wide);
-    color: var(--color-background);
+    color: var(--color-text-subtitle);
 }
