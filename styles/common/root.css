@@ -6,8 +6,8 @@
     --font-size-sm: clamp(0.875rem, 0.75rem + 0.3vw, 1rem);
     --font-size-base: clamp(1rem, 0.875rem + 0.5vw, 1.25rem);
     --font-size-md: clamp(1.25rem, 1rem + 0.8vw, 1.75rem);
-    --font-size-lg: clamp(1.75rem, 1.25rem + 1.5vw, 2.5rem);
-    --font-size-xl: clamp(2.5rem, 1.75rem + 2vw, 4rem);
+    --font-size-lg: clamp(1.75rem, 1rem + 1.5vw, 2.5rem);
+    --font-size-xl: clamp(2.5rem, 1rem + 2vw, 4rem);
 
     --font-weight-light: 300;
     --font-weight-regular: 400;
@@ -26,7 +26,7 @@
     --color-text-heading: #111111;
     --color-text-subtitle: #222222;
     --color-muted: #777777;
-    --color-accent: #FF3366;
+    --color-accent: #CC3366;
     --color-border: #DDDDDD;
 
     /* Spacing */

@@ -49,10 +49,11 @@ a {
     font-family: var(--font-body);
     color: var(--color-text-body);
     transition: var(--transition-normal);
+    cursor: pointer;
 }
 
 a:visited {
-    color: var(--color-muted);
+    color: var(--color-subtitle);
 }
 
 a:hover {

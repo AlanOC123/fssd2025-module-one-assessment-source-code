@@ -11,21 +11,45 @@ main h2 {
     text-align: center;
 }
 
-.featured-artist {
-    margin-inline: var(--spacing-sm);
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: var(--spacing-sm);
+@media (min-width: 0) {
+    .featured-artist {
+        margin-inline: var(--spacing-sm);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: var(--spacing-xl);
+        margin-inline: 10%;
+    }
+
+    .artist-media {
+        grid-row: 1 / 2;
+    }
+
+    .artist-info {
+        grid-row: 2 / -1;
+    }
 }
 
-.artist-media {
-    grid-column: 1 / 2;
-}
+@media (min-width: 768px) {
+    .featured-artist {
+        margin-inline: var(--spacing-sm);
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        gap: var(--spacing-sm);
+    }
 
-.artist-info {
-    grid-column: 2 / -1;
-    padding-inline: 10%;
-    border-left: var(--border-sm);
+    .artist-media {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+    }
+
+    .artist-info {
+        grid-column: 2 / -1;
+        grid-row: 1 / -1;
+        padding-inline: 10%;
+        border-left: var(--border-sm);
+    }
 }
 
 .artist-media,
@@ -91,6 +115,11 @@ main h2 {
     flex-wrap: wrap;
     gap: var(--spacing-md);
     white-space: nowrap;
+}
+
+.artist-media p,
+.artist-bio p.about {
+    line-height: var(--line-height-wide);
 }
 .artist-bio p span:not(.heading) {
     min-width: 10em;

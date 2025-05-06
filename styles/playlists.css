@@ -32,7 +32,7 @@ main ul {
   .spotify-container {
     width: 100%;
     max-width: 100%;
-    height: 48em;
+    height: clamp(24em, 48vw, 48em);
     overflow: hidden;
     border-radius: var(--border-radius-md);
   }

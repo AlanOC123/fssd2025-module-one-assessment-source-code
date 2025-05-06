@@ -20,7 +20,7 @@
                 <h1 class="title">Next-Up Music</h1>
             </div>
         </a>
-        <nav>
+        <nav aria-label="navigation">
             <ul>
                 <li><a href="./artists.html">Artists</a></li>
                 <li><a href="./genres.html">Genres</a></li>
@@ -34,7 +34,7 @@
     <!-- Main -->
     <main>
         <h2>Suggest an Artist</h2>
-        <form id="suggestion" action="#" method="post">
+        <form id="suggestion" action="https://httpdump.app/dumps/639c4319-b0d9-46b2-8556-7d0a10043671" method="post">
             <fieldset>
                 <legend>Artist Info</legend>
                 <div class="input-container">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="input-container">
                     <label for="artist-link">Link to Music</label>
-                    <input type="url" name="artist-link" id="artist-link" required>
+                    <input type="url" name="artist-link" id="artist-link" placeholder="https://" required>
                 </div>
             </fieldset>
 
@@ -70,6 +70,7 @@
                 <div class="input-container">
                     <label for="why-chosen">Tell Us Why You Chose Them</label>
                     <textarea
+                    aria-describedby="why-chosen-desc"
                     name="why-chosen"
                     id="why-chosen"
                     placeholder="Type reason"

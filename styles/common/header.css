@@ -2,32 +2,36 @@ header {
     display: flex;
     flex-wrap: wrap;
     position: sticky;
+    justify-content: space-between;
     top: 0;
     background-color: var(--color-background);
     z-index: 1;
-    margin-left: var(--spacing-sm);
+    padding-top:var(--spacing-sm);
+    margin-inline: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
+    overflow: hidden;
+    gap: var(--spacing-sm);
 }
 
 .to-home,
 nav {
-    width: 100%;
     flex: 1;
-    min-width: 50em;
+    white-space: nowrap;
+    width: fit-content;
     margin-bottom: var(--spacing-md);
 }
 
 
 .to-home {
+    display: flex;
     cursor: pointer;
 }
 
 .logo {
+    flex: 1;
     display: flex;
-    align-items: center;
     gap: var(--spacing-lg);
-    padding-block: var(--spacing-md);
-    padding-left: var(--spacing-md);
+    align-items: center;
 }
 
 .logo .logo-icon {
@@ -41,6 +45,7 @@ nav {
 }
 
 .title {
+    flex: 1;
     transition: var(--transition-normal);
 }
 
@@ -53,9 +58,36 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: var(--spacing-lg);
 }
 
 nav ul li {
     flex: 1;
     text-align: center;
+}
+
+@media (min-width: 0) {
+    .logo-icon {
+        display: none;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
+
+@media (min-width: 320px) {
+    .logo-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 425px) {
+    .logo-icon {
+        display: block;
+    }
+
+    .title {
+        text-align: left;
+    }
 }
