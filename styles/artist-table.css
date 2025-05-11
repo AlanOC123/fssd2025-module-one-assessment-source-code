@@ -1,0 +1,93 @@
+main {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.explore {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.card-view-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+main h2 {
+    text-align: center;
+}
+
+main table {
+    width: 90%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 10em 1fr;
+}
+
+table thead {
+    display: flex;
+    align-items: center;
+    border-bottom: var(--border-sm);
+}
+
+table thead tr {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--spacing-md);
+}
+
+table thead tr th {
+    font-size: var(--font-size-base);
+}
+
+table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+table tbody tr {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--spacing-md);
+}
+
+tr td,
+tr th {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr td {
+    font-size: var(--font-size-base);
+    border: var(--border-sm);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-sm);
+}
+
+tr td a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: var(--font-size-base);
+}
+
+tbody tr:nth-of-type(odd) td {
+    background-color: var(--color-border);
+    color: var(--color-accent);
+    font-size: var(--font-size-md);
+}
