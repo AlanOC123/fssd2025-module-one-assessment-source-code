@@ -22,6 +22,7 @@
 
     /* Colors */
     --color-background: #FEFEFE;
+    --color-background-transparent: #FEFEFE50;
     --color-text-body: #333333;
     --color-text-heading: #111111;
     --color-text-subtitle: #222222;

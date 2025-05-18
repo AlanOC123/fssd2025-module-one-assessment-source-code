@@ -31,12 +31,18 @@ main table {
     text-align: center;
     display: grid;
     grid-template-rows: 10em 1fr;
+    position: relative;
 }
 
 table thead {
     display: flex;
     align-items: center;
     border-bottom: var(--border-sm);
+    position: sticky;
+    top: 8%;
+    background-color: var(--color-background-transparent);
+    z-index: 1;
+    backdrop-filter: blur(1em);
 }
 
 table thead tr {
